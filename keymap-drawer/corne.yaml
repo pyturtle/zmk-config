@@ -1,9 +1,50 @@
-layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
+layout: {zmk_keyboard: corne}
 layers:
-  BAS: [↹, Q, W, E, R, T, Y, U, I, O, P, '$$mdi:backspace-outline$$', '$$mdi:apple-keyboard-control$$', A, S, D, F, G, H, J, K, L, ;, '''', '$$mdi:apple-keyboard-shift$$',
-    Z, X, C, V, B, N, M, ',', ., /, Esc, '$$mdi:apple-keyboard-command$$', LOW, ␣, ⏎, RAI, '$$mdi:apple-keyboard-option$$']
-  LOW:
+  BAS:
+  - ESCAPE
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - CAPSLOCK
+  - $$mdi:apple-keyboard-control$$
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - ''''
+  - $$mdi:apple-keyboard-shift$$
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - RSHIFT
+  - $$mdi:apple-keyboard-command$$
+  - {t: ␣, h: LOW}
+  - LEFT ALT
   - ↹
+  - {t: BACKSPACE, h: RAI}
+  - {t: ENTER, h: RIGHT WIN}
+  LOW:
+  - Boot
   - '1'
   - '2'
   - '3'
@@ -14,37 +55,37 @@ layers:
   - '8'
   - '9'
   - '0'
-  - $$mdi:backspace-outline$$
-  - BT CLR
-  - BT 1
-  - BT 2
-  - BT 3
-  - BT 4
-  - BT 5
-  - ←
-  - ↓
-  - ↑
-  - →
+  - \
+  - {t: ▽, type: trans}
+  - '!'
+  - '-'
+  - '{'
+  - '['
+  - (
+  - )
+  - ']'
+  - '}'
+  - KP PLUS
+  - AMPERSAND
+  - '`'
+  - {t: ▽, type: trans}
+  - '~'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - _
+  - '='
+  - '*'
+  - ^
+  - '|'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-shift$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-command$$
   - {type: held}
-  - ␣
-  - ⏎
   - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-option$$
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   RAI:
   - ↹
   - '!'
