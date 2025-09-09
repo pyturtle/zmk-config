@@ -11,7 +11,7 @@
 
 &led_strip { chain-length = <27>; };
 
-&lt { flavor = "hold-preferred"; };
+&lt { flavor = "balanced"; };
 
 / {
     keymap {
@@ -27,10 +27,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE  &kp Q  &kp W  &kp E     &kp R        &kp T           &kp Y    &kp U            &kp I                &kp O    &kp P     &kp CAPSLOCK
-&kp LCTRL   &kp A  &kp S  &kp D     &kp F        &kp G           &kp H    &kp J            &kp K                &kp L    &kp SEMI  &kp SQT
-&kp LSHFT   &kp Z  &kp X  &kp C     &kp V        &kp B           &kp N    &kp M            &kp COMMA            &kp DOT  &kp FSLH  &kp RSHIFT
-                          &kp LGUI  &lt 1 SPACE  &kp LEFT_ALT    &kp TAB  &lt 2 BACKSPACE  &mt RIGHT_WIN ENTER
+&kp ESCAPE  &kp Q  &kp W  &kp E         &kp R        &kp T           &kp Y    &kp U            &kp I                &kp O    &kp P     &kp CAPSLOCK
+&kp LCTRL   &kp A  &kp S  &kp D         &kp F        &kp G           &kp H    &kp J            &kp K                &kp L    &kp SEMI  &kp SQT
+&kp LSHFT   &kp Z  &kp X  &kp C         &kp V        &kp B           &kp N    &kp M            &kp COMMA            &kp DOT  &kp FSLH  &kp RSHIFT
+                          &mt LGUI ESC  &lt 1 SPACE  &kp LEFT_ALT    &kp TAB  &lt 2 BACKSPACE  &mt RIGHT_WIN ENTER
             >;
         };
 
@@ -44,9 +44,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&bootloader  &kp N1           &kp N2       &kp N3          &kp N4            &kp N5                  &kp N6                 &kp N7             &kp N8           &kp N9       &kp N0         &kp BSLH
+&bootloader  &kp N1           &kp N2       &kp N3          &kp N4            &kp N5                  &kp N6                 &kp N7             &kp N8           &kp N9       &kp N0         &trans
 &trans       &kp EXCLAMATION  &kp MINUS    &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp KP_PLUS  &kp AMPERSAND  &kp GRAVE
-&trans       &kp TILDE        &kp AT_SIGN  &kp POUND       &kp DOLLAR        &kp PERCENT             &kp UNDERSCORE         &kp EQUAL          &kp ASTERISK     &kp CARET    &kp PIPE       &trans
+&trans       &kp TILDE        &kp AT_SIGN  &kp POUND       &kp DOLLAR        &kp PERCENT             &kp UNDERSCORE         &kp EQUAL          &kp ASTERISK     &kp CARET    &kp PIPE       &kp BACKSLASH
                                            &trans          &trans            &trans                  &trans                 &trans             &trans
             >;
         };
@@ -61,10 +61,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp F1  &kp F2  &kp F3  &kp F4   &kp F5     &trans         &kp K_PREV    &kp UP            &kp K_FORWARD  &trans                &trans
-&trans  &kp F6  &kp F7  &kp F8  &kp F9   &kp F10    &kp C_BRI_DEC  &kp LEFT      &kp DOWN          &kp RIGHT      &kp C_BRIGHTNESS_INC  &trans
-&trans  &trans  &trans  &trans  &kp F11  &kp F12    &trans         &kp C_VOL_DN  &kp K_PLAY_PAUSE  &kp C_VOL_UP   &trans                &trans
-                        &trans  &trans   &trans     &trans         &trans        &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F4   &kp F5     &trans    &kp K_PREV    &trans            &kp K_FORWARD  &kp C_BRIGHTNESS_INC  &trans
+&trans  &kp F6  &kp F7  &kp F8  &kp F9   &kp F10    &kp LEFT  &kp UP        &kp DOWN          &kp RIGHT      &kp C_BRIGHTNESS_DEC  &trans
+&trans  &trans  &trans  &trans  &kp F11  &kp F12    &trans    &kp C_VOL_DN  &kp K_PLAY_PAUSE  &kp C_VOL_UP   &trans                &trans
+                        &trans  &trans   &trans     &trans    &trans        &trans
             >;
         };
     };

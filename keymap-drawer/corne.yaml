@@ -37,7 +37,7 @@ layers:
   - .
   - /
   - RSHIFT
-  - $$mdi:apple-keyboard-command$$
+  - {t: Esc, h: '$$mdi:apple-keyboard-command$$'}
   - {t: ␣, h: LOW}
   - LEFT ALT
   - ↹
@@ -55,7 +55,7 @@ layers:
   - '8'
   - '9'
   - '0'
-  - \
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '!'
   - '-'
@@ -79,7 +79,7 @@ layers:
   - '*'
   - ^
   - '|'
-  - {t: ▽, type: trans}
+  - \
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
@@ -95,9 +95,9 @@ layers:
   - F5
   - {t: ▽, type: trans}
   - PREV
-  - ↑
-  - FORWARD
   - {t: ▽, type: trans}
+  - FORWARD
+  - BRIGHTNESS INC
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F6
@@ -105,11 +105,11 @@ layers:
   - F8
   - F9
   - F10
-  - BRI DEC
   - ←
+  - ↑
   - ↓
   - →
-  - BRIGHTNESS INC
+  - BRIGHTNESS DEC
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
