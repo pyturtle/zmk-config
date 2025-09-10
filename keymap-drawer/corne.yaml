@@ -44,7 +44,7 @@ layers:
   - {t: BACKSPACE, h: RAI}
   - {t: ENTER, h: RIGHT WIN}
   LOW:
-  - Boot
+  - {t: ▽, type: trans}
   - '1'
   - '2'
   - '3'
@@ -87,7 +87,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   RAI:
-  - {t: ▽, type: trans}
+  - BT NXT
   - F1
   - F2
   - F3
@@ -99,7 +99,7 @@ layers:
   - FORWARD
   - BRIGHTNESS INC
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - BT CLR
   - F6
   - F7
   - F8

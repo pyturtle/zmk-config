@@ -7,6 +7,7 @@
 #include <dt-bindings/led/led.h>
 #include <dt-bindings/zmk/reset.h>
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 &led_strip { chain-length = <27>; };
@@ -44,10 +45,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&bootloader  &kp N1           &kp N2       &kp N3          &kp N4            &kp N5                  &kp N6                 &kp N7             &kp N8           &kp N9       &kp N0         &trans
-&trans       &kp EXCLAMATION  &kp MINUS    &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp KP_PLUS  &kp AMPERSAND  &kp GRAVE
-&trans       &kp TILDE        &kp AT_SIGN  &kp POUND       &kp DOLLAR        &kp PERCENT             &kp UNDERSCORE         &kp EQUAL          &kp ASTERISK     &kp CARET    &kp PIPE       &kp BACKSLASH
-                                           &trans          &trans            &trans                  &trans                 &trans             &trans
+&trans  &kp N1           &kp N2       &kp N3          &kp N4            &kp N5                  &kp N6                 &kp N7             &kp N8           &kp N9       &kp N0         &trans
+&trans  &kp EXCLAMATION  &kp MINUS    &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp KP_PLUS  &kp AMPERSAND  &kp GRAVE
+&trans  &kp TILDE        &kp AT_SIGN  &kp POUND       &kp DOLLAR        &kp PERCENT             &kp UNDERSCORE         &kp EQUAL          &kp ASTERISK     &kp CARET    &kp PIPE       &kp BACKSLASH
+                                      &trans          &trans            &trans                  &trans                 &trans             &trans
             >;
         };
 
@@ -61,10 +62,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp F1  &kp F2  &kp F3  &kp F4   &kp F5     &trans    &kp K_PREV    &trans            &kp K_FORWARD  &kp C_BRIGHTNESS_INC  &trans
-&trans  &kp F6  &kp F7  &kp F8  &kp F9   &kp F10    &kp LEFT  &kp UP        &kp DOWN          &kp RIGHT      &kp C_BRIGHTNESS_DEC  &trans
-&trans  &trans  &trans  &trans  &kp F11  &kp F12    &trans    &kp C_VOL_DN  &kp K_PLAY_PAUSE  &kp C_VOL_UP   &trans                &trans
-                        &trans  &trans   &trans     &trans    &trans        &trans
+&bt BT_NXT  &kp F1  &kp F2  &kp F3  &kp F4   &kp F5     &trans    &kp K_PREV    &trans            &kp K_FORWARD  &kp C_BRIGHTNESS_INC  &trans
+&bt BT_CLR  &kp F6  &kp F7  &kp F8  &kp F9   &kp F10    &kp LEFT  &kp UP        &kp DOWN          &kp RIGHT      &kp C_BRIGHTNESS_DEC  &trans
+&trans      &trans  &trans  &trans  &kp F11  &kp F12    &trans    &kp C_VOL_DN  &kp K_PLAY_PAUSE  &kp C_VOL_UP   &trans                &trans
+                            &trans  &trans   &trans     &trans    &trans        &trans
             >;
         };
     };
