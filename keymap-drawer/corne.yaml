@@ -40,7 +40,7 @@ layers:
   - {t: Esc, h: '$$mdi:apple-keyboard-command$$'}
   - {t: ␣, h: LOW}
   - LEFT ALT
-  - ↹
+  - {t: ↹, h: LEFT ALT}
   - {t: BACKSPACE, h: RAI}
   - {t: ENTER, h: RIGHT WIN}
   LOW:
