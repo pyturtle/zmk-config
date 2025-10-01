@@ -98,8 +98,8 @@ layers:
   - {t: ▽, type: trans}
   - FF
   - BRIGHTNESS INC
-  - {t: ▽, type: trans}
   - BT CLR
+  - {t: ▽, type: trans}
   - F6
   - F7
   - F8
