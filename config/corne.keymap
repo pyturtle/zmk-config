@@ -21,6 +21,8 @@
         capsword {
             bindings = <&caps_word>;
             key-positions = <24 35>;
+            require-prior-idle-ms = <0>;
+            timeout-ms = <200>;
         };
     };
 
