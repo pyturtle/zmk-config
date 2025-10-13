@@ -44,7 +44,7 @@ layers:
   - {t: BACKSPACE, h: RAI}
   - {t: ENTER, h: RIGHT WIN}
   LOW:
-  - {t: ▽, type: trans}
+  - Boot
   - '1'
   - '2'
   - '3'
