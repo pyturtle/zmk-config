@@ -56,29 +56,29 @@ layers:
   - '9'
   - '0'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '#'
   - '!'
-  - '-'
-  - '{'
-  - '['
+  - KP ASTERISK
+  - KP PLUS
+  - KP EQUAL
+  - AMPERSAND
+  - ^
   - (
   - )
+  - '['
   - ']'
-  - '}'
-  - KP PLUS
-  - AMPERSAND
+  - $
   - '`'
-  - {t: ▽, type: trans}
   - '~'
   - '@'
-  - '#'
-  - $
+  - KP MINUS
+  - '|'
   - '%'
   - _
-  - '='
-  - '*'
-  - ^
-  - '|'
+  - '{'
+  - <
+  - '>'
+  - '}'
   - \
   - {t: ▽, type: trans}
   - {type: held}

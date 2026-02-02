@@ -56,10 +56,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&bootloader  &kp N1           &kp N2       &kp N3          &kp N4            &kp N5                  &kp N6                 &kp N7             &kp N8           &kp N9       &kp N0         &trans
-&trans       &kp EXCLAMATION  &kp MINUS    &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp KP_PLUS  &kp AMPERSAND  &kp GRAVE
-&trans       &kp TILDE        &kp AT_SIGN  &kp POUND       &kp DOLLAR        &kp PERCENT             &kp UNDERSCORE         &kp EQUAL          &kp ASTERISK     &kp CARET    &kp PIPE       &kp BACKSLASH
-                                           &trans          &trans            &trans                  &trans                 &trans             &trans
+&bootloader  &kp N1           &kp N2           &kp N3        &kp N4        &kp N5           &kp N6          &kp N7                &kp N8                 &kp N9            &kp N0             &trans
+&kp HASH     &kp EXCLAMATION  &kp KP_ASTERISK  &kp KP_PLUS   &kp KP_EQUAL  &kp AMPERSAND    &kp CARET       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp DOLLAR
+&kp GRAVE    &kp TILDE        &kp AT_SIGN      &kp KP_MINUS  &kp PIPE      &kp PERCENT      &kp UNDERSCORE  &kp LEFT_BRACE        &kp LESS_THAN          &kp GREATER_THAN  &kp RIGHT_BRACE    &kp BACKSLASH
+                                               &trans        &trans        &trans           &trans          &trans                &trans
             >;
         };
 
