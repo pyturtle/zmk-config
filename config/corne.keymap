@@ -36,13 +36,13 @@
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
             // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+            //                    | GUI/ESC | LWR | ALT/TAB |   | BKSP | SPC/RSE | GUI/ENT |
 
             bindings = <
 &kp ESCAPE  &kp Q  &kp W  &kp E         &kp R        &kp T           &kp Y             &kp U            &kp I                &kp O    &kp P     &kp CAPSLOCK
 &kp LCTRL   &kp A  &kp S  &kp D         &kp F        &kp G           &kp H             &kp J            &kp K                &kp L    &kp SEMI  &kp SQT
 &kp LSHFT   &kp Z  &kp X  &kp C         &kp V        &kp B           &kp N             &kp M            &kp COMMA            &kp DOT  &kp FSLH  &kp RSHIFT
-                          &mt LGUI ESC  &lt 1 SPACE  &kp LEFT_ALT    &mt LEFT_ALT TAB  &lt 2 BACKSPACE  &mt RIGHT_WIN ENTER
+                          &mt LGUI ESC  &mo 1        &mt LEFT_ALT TAB  &kp BACKSPACE   &lt 2 SPACE      &mt RIGHT_WIN ENTER
             >;
         };
 

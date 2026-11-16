@@ -38,10 +38,10 @@ layers:
   - /
   - RSHIFT
   - {t: Esc, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: ␣, h: LOW}
-  - LEFT ALT
+  - LOW
   - {t: ↹, h: LEFT ALT}
-  - {t: BACKSPACE, h: RAI}
+  - BACKSPACE
+  - {t: ␣, h: RAI}
   - {t: ENTER, h: RIGHT WIN}
   LOW:
   - Boot
